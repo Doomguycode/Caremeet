@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}} : Remoting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="/javascripts/jquery.js"></script>
+    <link rel="stylesheet" href="/stylesheets/ui.css"/>
+    <link rel="stylesheet" href="/stylesheets/remoting.css"/>
+</head>
+<body><!-- For a normal page, omit all 'aui-page-' classes here -->
+<script>
+    String.prototype.isEmpty = function () {
+        return (this.length === 0 || !this.trim());
+    };
+    //test
+
+    const ACTIONS = {
+        VIEW_SET: 'VIEW_SET',
+
+        KEYBOARD_TOGGLE: 'KEYBOARD_TOGGLE',
+        MOUSE_TOGGLE: 'MOUSE_TOGGLE',
+
+        WS_KEY_PRESS: 'WS_KEY_PRESS',
+        WS_KEY_TOGGLE: 'WS_KEY_TOGGLE',
+        WS_MOUSE_CLICK: 'WS_MOUSE_CLICK',
+        WS_MOUSE_MOVE: 'WS_MOUSE_MOVE',
+        WS_MOUSE_TOGGLE: 'WS_MOUSE_TOGGLE',
+
+        WS_MOUSE_SCROLL: 'WS_MOUSE_SCROLL',
+        OTP_VERIFICATION: 'OTP_VERIFY'
+    };
+</script>
+<script src="/javascripts/remote/rtcConnection.js"></script>
+<script src="/javascripts/remote/adapter.js"></script>
+<script src="/javascripts/remote/socketio.js"></script>
+
+{{{body}}}
+
+
+</body>
+</html>

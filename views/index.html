@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/collab/collab_ui.css">
+</head>
+<body>
+
+<input type="button" value="Click me" onclick="voiceCall()">
+
+
+<!--<div id="audios-container" style="display: none;"></div>-->
+<!--<div id="videos-container"></div>-->
+
+<!--<button id="webcam-share">WebCam</button>-->
+<!--<button id="mute-button">mute</button>-->
+<!--<button id="screen-share">screen</button>-->
+<script>
+    function voiceCall(){
+    window.open('https://192.168.1.90:3000/live_Prescence_with_video?user=WAL-JESDALE&client=CTS&groups=19000,25000#', "_blank", "resizable=yes, scrollbars=yes, titlebar=yes, width=800, height=900, top=10, left=10");
+    }
+</script>
+<script src="/javascript/collab/jquery.js"></script>
+<script src="/javascripts/rtc/socketio.js"></script>
+<script src="/javascripts/rtc/adapter.js"></script>
+<script src="/javascripts/rtc/rtcConnection.js"></script>
+<script src="/javascripts/rtc/hark.js"></script>
+<script src="/javascripts/rtc/getHTMLMediaElement.js"></script>
+<script src="/javascript/collab/custom.js"></script>
+
+<!--<script src="collab/jquery.js"></script>-->
+<!--<script src="rtc/socketio.js"></script>-->
+<!--<script src="rtc/adapter.js"></script>-->
+<!--<script src="rtc/rtcConnection.js"></script>-->
+<!--<script src="rtc/hark.js"></script>-->
+<!--<script src="rtc/getHTMLMediaElement.js"></script>-->
+<!--<script src="collab/custom.js"></script>-->
+
+</body>
+</html>

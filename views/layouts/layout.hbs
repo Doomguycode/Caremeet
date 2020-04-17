@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/flex.css'/>
+    <link rel='stylesheet' href='/stylesheets/grid.css'/>
+    <link rel='stylesheet' href='/stylesheets/material.min.css'/>
+    <link rel="stylesheet" href="/stylesheets/aui-prototyping.css">
+    <link rel="stylesheet" href="/stylesheets/aui-prototyping.nodeps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="/javascripts/jquery.js"></script>
+
+
+    <script src="/javascripts/aui-prototyping.js"></script>
+    <script src="/javascripts/aui-prototyping.nodeps.js"></script>
+    <script src="/javascripts/aui-css-deprecations.js"></script>
+    <script src="/javascripts/soyutils.js"></script>
+    <script src="/javascripts/avatar.js"></script>
+    <script src="/javascripts/soyutils_usegoog.js"></script>
+    <script src="/javascripts/aui-soy.min.js"></script>
+    <script src="/javascripts/app.soy.js"></script>
+</head>
+<body><!-- For a normal page, omit all 'aui-page-' classes here -->
+<div class="page">
+    <!--<div class="page-header">-->
+    <!--{{> header}}-->
+    <!--</div>-->
+    <div class="page-content">
+    {{{body}}}
+    </div>
+
+</div>
+
+</body>
+</html>

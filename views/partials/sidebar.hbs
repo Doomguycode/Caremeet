@@ -1,0 +1,106 @@
+<div class="aui-sidebar" aria-expanded="false">
+    <div class="aui-sidebar-wrapper mwrap-sidebar">
+        <div class="aui-sidebar-body">
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-image">
+                        <span class="aui-avatar aui-avatar-project" style="height: 50px;width: 50px;padding: 8px;">
+                            <span class="aui-avatar-inner">
+                                <img width="50" height="50" avatar="{{params.meetingid}}" alt="" role="presentation">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="aui-page-header-main title-header-padding">
+                        <h1>
+                            {{params.meetingid}}
+                        </h1>
+
+                        <ol class="aui-nav aui-nav-breadcrumbs">
+                            <li>
+                                <span class="aui-nav-item-label timing-label">@{{query.user}}</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="aui-navgroup aui-navgroup-vertical">
+                <div class="aui-navgroup-inner">
+                    <div class="aui-sidebar-group aui-sidebar-group-tier-one">
+                        <div class="aui-nav-heading" title="Actions">
+                            <strong>Users</strong>
+                        </div>
+
+                        <ul class="aui-nav" title="Page actions" id="user-list">
+
+                        </ul>
+                    </div>
+
+                    <div class="aui-sidebar-group aui-sidebar-group-tier-one">
+                        <div class="aui-nav-heading" title="Stuff">
+                            <strong>Controls</strong>
+                        </div>
+
+                        <ul class="aui-nav">
+                            <li class="aui-nav-item" id="screen-share">
+                                <a class="aui-nav-item" title="Screen Share">
+                                    <span class="aui-icon aui-icon-small aui-iconfont-screen"></span>
+                                    <span class="aui-nav-item-label">Screen Share</span>
+                                </a>
+                            </li>
+
+                            <li class="aui-nav-item" id="webcam-share">
+                                <a class="aui-nav-item" title="Webcam Share">
+                                    <span class="aui-icon aui-icon-small aui-iconfont-video-filled"></span>
+                                    <span class="aui-nav-item-label">Webcam Share</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="aui-nav-item"
+                                   title="Mute Audio">
+                                    <span class="aui-icon aui-icon-small aui-iconfont-vid-audio-muted"></span>
+                                    <span class="aui-nav-item-label">Mute</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="aui-nav-item" title="Chat">
+                                    <span class="aui-icon aui-icon-small aui-iconfont-comment"></span>
+                                    <span class="aui-nav-item-label">Chat</span>
+                                </a>
+                            </li>
+
+                            <li id="screen-control-btn" class="aui-nav-item" >
+                                <a class="aui-nav-item" title="Screen Control" >
+                                    <span class="aui-icon aui-icon-small aui-iconfont-watch"></span>
+                                    <span class="aui-nav-item-label">Screen Control</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="aui-sidebar-group aui-sidebar-group-tier-one " id="video-parent-container">
+                        <div class="aui-nav-heading" title="Stuff">
+                            <strong>Screens</strong>
+                        </div>
+                        <ul class="aui-nav" id="videos-container">
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sidebar footer contains the expand/collapse trigger, and optionally a button or a dropdown with configuration settings -->
+        <div class="aui-sidebar-footer">
+            <a class="aui-button aui-button-subtle aui-sidebar-settings-button"
+               title="Settings">
+                <span class="aui-icon aui-icon-small aui-iconfont-settings"></span>
+                <span class="aui-button-label">Settings</span>
+            </a>
+            <a class="aui-button aui-button-subtle aui-sidebar-toggle aui-sidebar-footer-tipsy"
+               title="Collapse sidebar ( [ )">
+                <span class="aui-icon aui-icon-small"></span>
+            </a>
+        </div>
+    </div>
+</div>

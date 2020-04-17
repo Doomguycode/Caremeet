@@ -1,0 +1,131 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.mwrap-sidebar {
+    background: white !important;
+    border-right: 1px solid #dadada !important;
+}
+
+.padding0 {
+    padding: 0 !important;
+}
+
+.video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+
+.video-js-responsive-container .video-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+[data-toggle="textavatar"],
+.textavatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-toggle="textavatar"] abbr,
+.textavatar abbr {
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    text-decoration: none;
+
+    /* Avoid Bootstrap css*/
+    border-bottom: 0 !important;
+    cursor: default !important;
+}
+
+
+
+.w100h100 {
+    width: 100% !important;
+    height: 100%;
+}
+
+.muser-icon {
+    padding-right: 4px;
+}
+
+#videos-container {
+    padding: 15px;
+}
+.mvideo {
+    border: 1px solid #222222;
+}
+#videos-container:hover {
+    cursor: pointer;
+    background: #eaeaea;
+}
+
+html, body {
+    margin: 0;
+    height: 100%; /* can also use viewport units (height: 100vh) */
+}
+
+#appcontainer {
+    display: flex; /* displays flex-items (children) inline */
+    flex-direction: column; /* stacks them vertically */
+    height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
+}
+
+.main-content {
+    flex: 1; /* takes the remaining height of the "container" div */
+    overflow: auto; /* to scroll just the "main" div */
+}
+
+.main-section {
+    height: 100%; /* takes the visible area of the "main" div */
+    overflow: auto;
+}
+
+.main-header {background: #f88}
+.sidebar-video-container {
+    background-color: #fff;
+    border-left: 1px solid #eaeaea;
+}
+.timing-label {
+    font-size: 12px;
+    color: #999;
+}
+.title-header-padding {
+    padding-top: 6px !important;
+}
+
+.center-vertical-video-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aui-nav-item {
+    cursor: pointer;
+}
+
+
+#fullScreenBtn {
+    width: 20px;
+    height: 20px;
+    border: 3px dashed #000;
+    margin: 10px;
+    cursor: pointer;
+}
